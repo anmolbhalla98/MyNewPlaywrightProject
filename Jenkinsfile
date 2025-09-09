@@ -44,9 +44,11 @@ pipeline {
             ])
 
             // Email notification (ready to work once SMTP is configured)
-        //     mail to: 'anmolbhalla98@gmail.com',
-        //          subject: "Jenkins Build ${currentBuild.fullDisplayName}",
-        //          body: "Build ${currentBuild.fullDisplayName} finished with status: ${currentBuild.currentResult}"
-        // }
-    }
-}
+            /*
+            mail to: 'anmolbhalla98@gmail.com',
+                 subject: "Jenkins Build ${currentBuild.fullDisplayName}",
+                 body: "Build ${currentBuild.fullDisplayName} finished with status: ${currentBuild.currentResult}"
+            */
+        } // end always
+    } // end post
+} // end pipeline
