@@ -35,6 +35,7 @@ pipeline {
 
             // Publish HTML report in Jenkins UI (requires HTML Publisher Plugin)
             publishHTML([
+                allowMissing: true,
                 reportName: 'Playwright HTML Report',
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
