@@ -11,7 +11,7 @@ test ('We are Opening Home Page and Verifying Logo', async ({page})=>{
     await expect(logo).toBeVisible();
     await expect(logo).toHaveAttribute('title','FIFA');
 })
-test('Verifying navigation link texts', async ({ page }) => {
+test('Verifying navigation link texts are correct!', async ({ page }) => {
   const expectedNavLinks = [
     "OVERVIEW",
     "FIFA WORLD CUP 26™",
